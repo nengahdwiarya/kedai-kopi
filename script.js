@@ -180,7 +180,7 @@
   $('#checkout-button')?.addEventListener('click', () => {
     const items = [...cart.values()];
     if (!items.length) return;
-    const number = prompt('Masukkan nomor WhatsApp kedai (format internasional, contoh 62812xxxx tanpa tanda +):');
+    const number = prompt('62881025467022 kedai (format internasional, contoh 62812xxxx tanpa tanda +):');
     if (!number) return;
     const cleanNumber = number.replace(/\D/g, '');
     if (cleanNumber.length < 9 || cleanNumber.length > 15) return toast('Nomor WhatsApp tidak valid.');
